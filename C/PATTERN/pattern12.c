@@ -13,4 +13,11 @@ void main(){
 		printf("\n");
 	}
 }
-
+/*
+Enter the no of lines: 5
+ 123456789
+  1234567
+   12345
+    123
+     1
+*/
