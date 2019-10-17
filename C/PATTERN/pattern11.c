@@ -13,4 +13,12 @@ void main(){
 		printf("\n");
 	}
 }
-
+/// OUTPUT ///
+/*
+Enter the no of lines: 5
+ 555555555
+  4444444
+   33333
+    222
+     1
+*/
