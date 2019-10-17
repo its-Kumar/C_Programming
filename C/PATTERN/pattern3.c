@@ -12,4 +12,11 @@ void main(){
 		printf("\n");
 	}
 }
-
+/*
+Enter the no of lines: 5
+5
+5 4
+5 4 3
+5 4 3 2
+5 4 3 2 1
+*/
