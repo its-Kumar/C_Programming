@@ -17,4 +17,11 @@ void main(){
 		printf("\n");
 	}
 }
+/*
+Enter the no of lines: 4
+   1
+  232
+ 34543
+4567654
 
+*/
