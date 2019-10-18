@@ -23,7 +23,7 @@ float Greedy_knapsack(int p[],int w[],int n,int m){
        
     printf("\nProfit/Weight matrix is :\n");
     for(int i=0; i<n; i++)
-        printf("%5f",p_w[i]);
+        printf("%5.2f",p_w[i]);
     sort(p,w,p_w,n);
     for(i=0; i<n; i++){
         if(m >0 && w[i]<=m){
