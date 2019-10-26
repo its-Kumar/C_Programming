@@ -35,12 +35,37 @@ int lcs(char *s1, char *s2, int m, int n){
     return lst[m][n];
 }
 
+
+// Recursive solution with Memorization
+int lcs(char *s1, char *s2, int m, int n, int lst[][10]){
+    if(m==0 || n==0)
+        return 0;
+    // if already stored in table
+    if(lst[m-1][n-1] != -1)
+        return lst[m-1][n-1];
+
+    if(s1[m-1] == s2[n-1]){
+        // Store in table to avoid repeatation
+        lst[m-1][n-1] = 1 +lcs(s1, s2, m-1, n-1, lst);
+        return lst[m-1][n-1];
+        }
+    else{
+        lst[m-1][n-1] = max(lcs(s1, s2, m, n-1, lst), lcs(s1, s2, m-1, n, lst));
+        return lst[m-1][n-1];
+        }
+}
+
+
 int main(){
     char *s1 = "ABCDGH";
     char *s2 = "AEDFHR";
     int m = strlen(s1);
     int n = strlen(s2);
+    int lst[m+1][10];
+    memset(lst,-1,sizeof(lst));
 
-    printf("Longest common subsequence lenght is : %d",lcs(s1,s2,m,n));
+    printf("Longest common subsequence lenght is : %d",lcs(s1, s2, m, n,lst));
+    //printf("Longest common subsequence lenght is : %d",lcs(s1,s2,m,n));
+    
     return 0;
 }
