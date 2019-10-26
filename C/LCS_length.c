@@ -5,7 +5,7 @@ int max(int a, int b){
     return (a>b)? a : b;
 }
 
-// Recursive solution
+// Recursive solution (time complexity = O(2^n)
 
 int lcs(char *s1, char *s2, int m, int n){
     if(m==0 || n==0)
@@ -17,7 +17,7 @@ int lcs(char *s1, char *s2, int m, int n){
 }
 
 
-// Solution with Memorization
+// Solution with Memorization (time complexity = O(m X n)
 int lcs(char *s1, char *s2, int m, int n){
     int lst[m+1][n+1];
     int i, j;
