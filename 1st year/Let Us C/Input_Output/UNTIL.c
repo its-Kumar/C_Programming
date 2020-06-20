@@ -1,7 +1,7 @@
-#include "stdio.h" <+>
+#include "stdio.h" < +>
 main()
 {
 	char ch;
-	while((ch=getc(stdin))!=EOF)
-		putc(ch,stdout);
+	while ((ch = getc(stdin)) != EOF)
+		putc(ch, stdout);
 }

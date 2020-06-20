@@ -5,5 +5,5 @@ main()
 {
 	char name[]="Klinsman";
 	printf("%s", name);
-	
+
 }

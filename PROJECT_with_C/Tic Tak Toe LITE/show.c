@@ -3,7 +3,7 @@
 void intialize(char board[])
 {
 	int i;
-	for(i=0; i<9; i++)
+	for (i = 0; i < 9; i++)
 		board[i] = ' ';
 }
 

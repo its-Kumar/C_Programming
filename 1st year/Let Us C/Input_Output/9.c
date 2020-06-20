@@ -1,12 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
 
-main(){
+main()
+{
 	FILE *fp;
-	
-	fp=fopen("PR1.c", "r");
-	if(fp==NULL)
+
+	fp = fopen("PR1.c", "r");
+	if (fp == NULL)
 	{
 		puts("Cannot open file.");
-		
 	}
 }

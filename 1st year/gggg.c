@@ -1,11 +1,11 @@
-#include<stdio.h>
+#include <stdio.h>
 void main()
 {
-	int i=1;
-	for( ; ; )
+	int i = 1;
+	for (;;)
 	{
-		printf("%d",i);
-		if(i==0)
+		printf("%d", i);
+		if (i == 0)
 			break;
 	}
 }

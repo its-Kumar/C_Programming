@@ -1,33 +1,36 @@
 //program to append records to a file
 
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int main(void){
-    struct record{
+int main(void)
+{
+    struct record
+    {
         char name[20];
         int roll;
         int marks;
-    }student;
+    } student;
     FILE *fp;
-    int choice =1;
-    fp=fopen("stu","ab");   //append in append mode
-    if(fp==NULL){
+    int choice = 1;
+    fp = fopen("stu", "ab"); //append in append mode
+    if (fp == NULL)
+    {
         printf("Error in openning file\n");
         exit(1);
     }
     /*//program to append records to a file*/
-    while(choice==1)
+    while (choice == 1)
     {
         printf("Enter name: ");
-        scanf("%s",student.name);
+        scanf("%s", student.name);
         printf("Enter roll no : ");
-        scanf("%d",&student.roll);
+        scanf("%d", &student.roll);
         printf("Enter marks: ");
         scanf("%d", &student.marks);
-        fwrite(&student,sizeof(student),1,fp);
+        fwrite(&student, sizeof(student), 1, fp);
         printf("Want to enter more ?(1 for yes/ 0 for no) : ");
-        scanf("%d",&choice);
+        scanf("%d", &choice);
     }
     fclose(fp);
     return 0;

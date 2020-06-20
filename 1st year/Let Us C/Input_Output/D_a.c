@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int xgets(char a[100]);
 int xputs(char a[100]);

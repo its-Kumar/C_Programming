@@ -1,26 +1,29 @@
-#include<stdio.h>
+#include <stdio.h>
 
-void main(){
-	int noc,nob,nol;
+void main()
+{
+	int noc, nob, nol;
 	FILE *fp;
 	char ch;
-	fp=fopen("45.c","r");
-	if(fp==NULL){
+	fp = fopen("45.c", "r");
+	if (fp == NULL)
+	{
 		printf("\nUnable to open source file......");
-		getch();exit(0);
+		getch();
+		exit(0);
 	}
-	
-	while(1){
-		ch=fgetc(fp);
-		if(ch==EOF)
+
+	while (1)
+	{
+		ch = fgetc(fp);
+		if (ch == EOF)
 			break;
-		if(ch==' ')
+		if (ch == ' ')
 			nob++;
-		if(ch=='\n')
+		if (ch == '\n')
 			nol++;
 		noc++;
 	}
 	fclose(fp);
-	printf("\nBlanks = %d\nLines = %d\nCharacters = %d",nob,nol,noc);
-	
+	printf("\nBlanks = %d\nLines = %d\nCharacters = %d", nob, nol, noc);
 }

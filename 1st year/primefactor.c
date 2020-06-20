@@ -1,21 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
 void main()
 {
-	int n,i,k;
+	int n, i, k;
 	printf("\n Enter the Number:-");
-	scanf("%d",&n);
-	k=n;
-	
+	scanf("%d", &n);
+	k = n;
+
 	printf("The prime factors:\n");
-	for(i=2;i<=k;i++)
+	for (i = 2; i <= k; i++)
 	{
-		if(k%i==0)
+		if (k % i == 0)
 		{
-			printf("  %d",i);
-			k=k/i;
-			i=1;
+			printf("  %d", i);
+			k = k / i;
+			i = 1;
 		}
-		
 	}
 	getch();
 }

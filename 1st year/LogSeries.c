@@ -1,13 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 
-void main(){
+void main()
+{
 	int i;
-	float x,term,sum=0;
+	float x, term, sum = 0;
 	printf("Enter the value of X:");
 	scanf("%f", &x);
-	for(i=1;i<=7;i++){
-		term=pow((x-1)/x,i)/i;
-		sum=sum+term;
+	for (i = 1; i <= 7; i++)
+	{
+		term = pow((x - 1) / x, i) / i;
+		sum = sum + term;
 	}
-	printf("log x = %f",sum);
+	printf("log x = %f", sum);
 }

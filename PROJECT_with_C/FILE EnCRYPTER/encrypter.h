@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 void encrypt(FILE *fp);
 /*
@@ -10,5 +10,3 @@ void decrypt();
 /*
 *Function to decrypt the file
 */
-
-

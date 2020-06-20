@@ -18,7 +18,7 @@ void intialize(char board[]);
 *Function to intializing the game
 */
 
-void winner(char[],int);
+void winner(char[], int);
 /*
 *Declear the winner
 */
@@ -30,7 +30,7 @@ int game_over(char board[]);
 
 int row_crossed(char board[]);
 /*
-*in case of row crossed 
+*in case of row crossed
 */
 
 int colomn_crossed(char board[]);
@@ -42,7 +42,6 @@ int diagonal_crossed(char board[]);
 /*
 *in case of diagonal crossed
 */
-void place_marker(char board[],int position,char marker);
+void place_marker(char board[], int position, char marker);
 
-int check_positon(char board[],int position);
-
+int check_positon(char board[], int position);

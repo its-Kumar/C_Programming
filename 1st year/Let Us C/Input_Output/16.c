@@ -4,15 +4,15 @@ main()
 {
 	FILE *fp;
 	char ch;
-	
-	fp=fopen("poem.txt", "r");
-	
-	if(fp==NULL)
+
+	fp = fopen("poem.txt", "r");
+
+	if (fp == NULL)
 	{
 		printf("Cannot open file");
 		exit(0);
 	}
-	while((ch=fget(fp))!=EOF)
+	while ((ch = fget(fp)) != EOF)
 		fputc(ch, stdprn);
 	fclose(fp);
 }

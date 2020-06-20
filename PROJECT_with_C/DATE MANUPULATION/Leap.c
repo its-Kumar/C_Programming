@@ -1,6 +1,7 @@
-int isLeap(int year){
-    if(year%100 !=0 && year%4 || year%400 ==0)
+int isLeap(int year)
+{
+    if (year % 100 != 0 && year % 4 || year % 400 == 0)
         return 1;
-    else 
+    else
         return 0;
 }

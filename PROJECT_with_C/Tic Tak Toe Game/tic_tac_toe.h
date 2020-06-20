@@ -1,9 +1,8 @@
-#include<stdlib.h>
-#include<stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
 #define SIDE 3
 #define COMPUTER 0
 #define HUMAN 1
-
 
 void show_board(char board[][SIDE]);
 /*
@@ -15,7 +14,7 @@ void show_instructions();
 *Function to show instructions
 */
 
-void intialize(char board[][SIDE],int moves[]);
+void intialize(char board[][SIDE], int moves[]);
 /*
 *Function to intializing the game
 */
@@ -32,7 +31,7 @@ int game_over(char board[][SIDE]);
 
 int row_crossed(char board[][SIDE]);
 /*
-*in case of row crossed 
+*in case of row crossed
 */
 
 int colomn_crossed(char board[][SIDE]);
@@ -44,5 +43,3 @@ int diagonal_crossed(char board[][SIDE]);
 /*
 *in case of diagonal crossed
 */
-
-

@@ -1,9 +1,9 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 //file encryption utility
 
-
-int main(){
+int main()
+{
 	printf("KumAR Shanu......");
 }

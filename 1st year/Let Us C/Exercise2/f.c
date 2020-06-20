@@ -1,24 +1,25 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-   int ram,shyam,ajay;
-   
-   printf("Enter the ages of Ram,Shyam and Ajay:	");
-   scanf("%d%d%d",&ram,&shyam,&ajay);
-   
-   if(ram<shyam)
-   {
-   	if(ram<ajay)
-   	{
-   		printf("Ram is youngest.");
-	   }
-	   else
-	   {
-	   	printf("Ajay is youngest.");
-	   }
-   }
-   else{
-   printf("Shyam is youngest.");
+	int ram, shyam, ajay;
+
+	printf("Enter the ages of Ram,Shyam and Ajay:	");
+	scanf("%d%d%d", &ram, &shyam, &ajay);
+
+	if (ram < shyam)
+	{
+		if (ram < ajay)
+		{
+			printf("Ram is youngest.");
+		}
+		else
+		{
+			printf("Ajay is youngest.");
+		}
 	}
-return 0;
+	else
+	{
+		printf("Shyam is youngest.");
+	}
+	return 0;
 }

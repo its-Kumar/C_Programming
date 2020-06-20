@@ -1,25 +1,31 @@
-#include<stdio.h>
+#include <stdio.h>
 
-void main(){
-	FILE *fs,*ft;
+void main()
+{
+	FILE *fs, *ft;
 	char ch;
-	fs=fopen("abc.txt","r");
-	if(fs==NULL){
+	fs = fopen("abc.txt", "r");
+	if (fs == NULL)
+	{
 		printf("\nUnable to open source file......");
-		getch();exit(0);
+		getch();
+		exit(0);
 	}
-	ft=fopen("nnnm","w");
-	if(ft==NULL){
+	ft = fopen("nnnm", "w");
+	if (ft == NULL)
+	{
 		printf("\nUnable to open target file......");
-		getch();exit(0);
+		getch();
+		exit(0);
 	}
-	while(1){
-		ch=fgetc(fs);
-		fputc(ch,ft);
-		if(ch==EOF)
+	while (1)
+	{
+		ch = fgetc(fs);
+		fputc(ch, ft);
+		if (ch == EOF)
 			break;
 	}
-	fclose(fs); fclose(ft);
+	fclose(fs);
+	fclose(ft);
 	printf("File copied successfully.......");
-	
 }

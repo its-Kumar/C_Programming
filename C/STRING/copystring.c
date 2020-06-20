@@ -1,10 +1,10 @@
-#include<stdio.h>
+#include <stdio.h>
 #include "str_fun.c"
 
-
-void main(){
+void main()
+{
 	int c;
-	char s1[50],s2[50];
+	char s1[50], s2[50];
 	printf("Enter string1:-");
 	gets(s1);
 	printf("Enter string2 :-\n");
@@ -12,4 +12,3 @@ void main(){
 	rev(s1);
 	puts(s1);
 }
-

@@ -1,5 +1,6 @@
-#include<stdio.h>
+#include <stdio.h>
 
-main(){
+main()
+{
 	printf("You\tmust\tbe\tcrazy\nto\thate\tthis\tbook");
 }

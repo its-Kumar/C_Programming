@@ -1,13 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 
-main(){
-	char ch='A';
-	
+main()
+{
+	char ch = 'A';
+
 	putch(ch);
 	putchar(ch);
 	fputchar(ch);
 	putch('Z');
 	putchar('Z');
 	fputchar('Z');
-	
 }
