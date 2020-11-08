@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "dtmanip.h"
 
-main()
+void main()
 {
     int choice;
     char date[11], date1[11], date2[11];

@@ -1,0 +1,70 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Adddays.o Addmonths.o Addyears.o Cmpdate.o Datefmt.o Diffdays.o Diffymd.o Julian.o Leap.o main.o Subdays.o Submonths.o Subyears.o Valid.o Weekday.o
+LINKOBJ  = Adddays.o Addmonths.o Addyears.o Cmpdate.o Datefmt.o Diffdays.o Diffymd.o Julian.o Leap.o main.o Subdays.o Submonths.o Subyears.o Valid.o Weekday.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Date.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Adddays.o: Adddays.c
+	$(CC) -c Adddays.c -o Adddays.o $(CFLAGS)
+
+Addmonths.o: Addmonths.c
+	$(CC) -c Addmonths.c -o Addmonths.o $(CFLAGS)
+
+Addyears.o: Addyears.c
+	$(CC) -c Addyears.c -o Addyears.o $(CFLAGS)
+
+Cmpdate.o: Cmpdate.c
+	$(CC) -c Cmpdate.c -o Cmpdate.o $(CFLAGS)
+
+Datefmt.o: Datefmt.c
+	$(CC) -c Datefmt.c -o Datefmt.o $(CFLAGS)
+
+Diffdays.o: Diffdays.c
+	$(CC) -c Diffdays.c -o Diffdays.o $(CFLAGS)
+
+Diffymd.o: Diffymd.c
+	$(CC) -c Diffymd.c -o Diffymd.o $(CFLAGS)
+
+Julian.o: Julian.c
+	$(CC) -c Julian.c -o Julian.o $(CFLAGS)
+
+Leap.o: Leap.c
+	$(CC) -c Leap.c -o Leap.o $(CFLAGS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+Subdays.o: Subdays.c
+	$(CC) -c Subdays.c -o Subdays.o $(CFLAGS)
+
+Submonths.o: Submonths.c
+	$(CC) -c Submonths.c -o Submonths.o $(CFLAGS)
+
+Subyears.o: Subyears.c
+	$(CC) -c Subyears.c -o Subyears.o $(CFLAGS)
+
+Valid.o: Valid.c
+	$(CC) -c Valid.c -o Valid.o $(CFLAGS)
+
+Weekday.o: Weekday.c
+	$(CC) -c Weekday.c -o Weekday.o $(CFLAGS)
