@@ -40,6 +40,10 @@ $ ./program_name
 
   This Folder contains programs using **Control Statements** like *if-else, while loop, for loop*, etc.
 
++ [3_Functions](3_Functions)
+
+  This Folder contains programms using functions.
+
 * PROJECT_with_C
 
   This folder contains some basic projects with C.
