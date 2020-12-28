@@ -1,13 +1,40 @@
-
 # C_Programming
 
-All C Programs
+This repository contains all programs implementation in **C language** from *B.tech Programming syllabus*.
+Most of the programms from **Let Us c** and **C in Depth** books.
 
-## This folder contains three folders
+## Running the C programms
+### On Windows:
 
-* 1st year
+1. On windows download the `Devcpp` software.
+2. Now open the folder in `Devcpp` software and open the program which you want to run
+3. Click on the compile button. (It will compile the program)
+4. Click on the run button to execute the program.
+5. You can directly compile and run program from commandline in windows. (same as linux)
 
-  This folder contains my college's first year programs of C language
+### On Linux
+1.  Open the folder in any texteditor(Vscode, jeany, etc.)
+2. Open terminal
+3. Compile the program
+```bash
+$ gcc program_name.c -o program_name
+
+# if your program contains any mathematic function ('math.h')
+# then link math library as
+$ gcc -lm program_name.c -o program_name
+```
+4. run the program
+```
+$ ./program_name
+```
+### On Mac
+Same as windows or linux
+
+## Folder Structure
+
++ 1_PATTERN
+
+  All types of patterns printing through C.
 
 * C
 
