@@ -44,6 +44,10 @@ $ ./program_name
 
   This Folder contains programms using functions.
 
++ [4_ARRAY](4_ARRAY)
+
+  Programms on arrays
+
 * PROJECT_with_C
 
   This folder contains some basic projects with C.
