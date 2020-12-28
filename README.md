@@ -28,18 +28,17 @@ $ gcc -lm program_name.c -o program_name
 $ ./program_name
 ```
 ### On Mac
-Same as windows or linux
+  Same as windows or linux
 
 ## Folder Structure
 
-+ 1_PATTERN
++ [1_PATTERN](1_PATTERN)
 
   All types of patterns printing through C.
 
-* C
++ [2_ControlStatements](2_ControlStatements)
 
-  This folder contains impleamentations in C language of some problems. Such as basic problems, DAA
-  problems, etc.
+  This Folder contains programs using **Control Statements** like *if-else, while loop, for loop*, etc.
 
 * PROJECT_with_C
 
