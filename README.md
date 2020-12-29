@@ -48,6 +48,10 @@ $ ./program_name
 
   Programms on arrays
 
++ [5_STRING](5_STRING)
+
+  Programms of strings in c
+
 * PROJECT_with_C
 
   This folder contains some basic projects with C.
