@@ -52,6 +52,21 @@ $ ./program_name
 
   Programms of strings in c
 
++ [6_STRUCT](6_STRUCT)
+
+  Programms using structures
+
++ [7_FILE](7_FILE)
+
+  Working with files in C
+
+  - Read File
+  - Write File
+  - Copy file
+  - Merge Files
+  - Count chars, words, etc.
+  - Creating database using files
+
 * PROJECT_with_C
 
   This folder contains some basic projects with C.
