@@ -67,7 +67,11 @@ $ ./program_name
   - Count chars, words, etc.
   - Creating database using files
 
-* PROJECT_with_C
++ [Preprocessor](Preprocessor)
+
+  Preprocessors in C language.
+
+* [PROJECT_with_C](PROJECT_with_C)
 
   This folder contains some basic projects with C.
 
