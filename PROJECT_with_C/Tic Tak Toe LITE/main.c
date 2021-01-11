@@ -1,9 +1,9 @@
 #include "tic_tac_toe.h"
 
-char board[9];
+char board[9]; //game board
 int main(void)
 {
-	char player_marker = '\0', computer_marker = '\0';
+	char player_marker = '\0', computer_marker = '\0'; //markers
 	int turn = PLAYER, position = 9, moves = 0;
 
 	srand(time(NULL));

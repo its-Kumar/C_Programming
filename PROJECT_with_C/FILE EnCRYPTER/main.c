@@ -5,7 +5,7 @@
 int main(int argc, char *argv[])
 {
 	int choice;
-	char f_name[20];
+	char f_name[20]; // file name
 	FILE *fp = NULL;
 
 	printf("\t\t\tWelcome to File Encrypter\n\n");

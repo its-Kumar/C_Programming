@@ -1,10 +1,11 @@
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+// @its-Kumar
+
 #include <stdio.h>
 #include <stdlib.h>
 #define COMPUTER 1
 #define HUMAN 2
-#define SIDE 3
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+#define SIDE 3 // sides of game board
 
 int main(int argc, char *argv[])
 {

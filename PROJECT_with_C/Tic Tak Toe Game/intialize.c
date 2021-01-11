@@ -1,4 +1,5 @@
 #include "tic_tac_toe.h"
+
 void intialize(char board[][SIDE], int moves[])
 {
 	int i, j;

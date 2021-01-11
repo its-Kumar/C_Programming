@@ -1,4 +1,8 @@
+// @its-Kumar
+
 #include "tic_tac_toe.h"
+
+// return true if position in empty
 int check(char board[][SIDE], int x, int y)
 {
 	if (board[x][y] == ' ')

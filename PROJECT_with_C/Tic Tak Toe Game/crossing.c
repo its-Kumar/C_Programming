@@ -1,4 +1,5 @@
 #include "tic_tac_toe.h"
+
 int row_crossed(char board[][SIDE])
 {
 	int i;
